@@ -90,6 +90,14 @@ function selectCharacter(character) {
     generateObstacles(); // Começa a gerar obstáculos
 }
 
+const volumeControl = document.getElementById('volume');
+volumeControl.addEventListener('input', (event) => {
+    const volume = event.target.value;
+    backgroundMusic.volume = volume;
+    jumpSound.volume = volume;
+    colisaoSound.volume = volume;
+});
+
 // Função de pular (jump)
 function jump() {
     characterImg.classList.add("jump");

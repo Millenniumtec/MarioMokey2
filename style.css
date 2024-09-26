@@ -8,6 +8,15 @@
 
 }
 
+.volume-control{
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 0px;
+}
+
 #logo {
     position: absolute;
     top: 1%;
